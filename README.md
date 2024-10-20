@@ -1,2 +1,2 @@
 # informatika_projekt
-Informatika - projekt
+Hra v enginu Godot jako projekt na predmet Informatika.
