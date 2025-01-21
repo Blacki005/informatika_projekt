@@ -1,0 +1,122 @@
+[gd_scene load_steps=6 format=3 uid="uid://dna0n06fraoup"]
+
+[ext_resource type="Script" path="res://scripts/inventory.gd" id="1_s4ns6"]
+[ext_resource type="Texture2D" uid="uid://c4d5g5m150gel" path="res://images/user_interface/inventory_background.png" id="2_ediuq"]
+[ext_resource type="Texture2D" uid="uid://p4roc04hy5t3" path="res://images/user_interface/inventory_slot.png" id="2_wsvst"]
+[ext_resource type="Script" path="res://scripts/slot.gd" id="2_y5fwg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2ekvf"]
+texture = ExtResource("2_wsvst")
+
+[node name="inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s4ns6")
+
+[node name="ColorRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.816
+anchor_top = 0.015
+anchor_right = 0.983
+anchor_bottom = 0.252
+offset_left = 0.279907
+offset_top = -0.200001
+offset_right = -0.360107
+offset_bottom = -0.160004
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_ediuq")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.827
+anchor_top = 0.045
+anchor_right = 0.981
+anchor_bottom = 0.247
+offset_left = 0.919922
+offset_top = 0.399998
+offset_right = 0.239868
+offset_bottom = 0.23999
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 4
+
+[node name="Slot1" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot2" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot3" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot4" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot5" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot6" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot7" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot8" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot9" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot10" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot11" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
+
+[node name="Slot12" type="Panel" parent="GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2ekvf")
+script = ExtResource("2_y5fwg")
